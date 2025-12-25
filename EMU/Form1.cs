@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using CarRentalManagementSystem.EMU;
 //using System.Data;
 
 namespace CarRentalManagementSystem
@@ -96,6 +97,9 @@ namespace CarRentalManagementSystem
             if (dt.Rows.Count > 0)
             {
                 MessageBox.Show("Login Success");
+
+                Main mn = new Main();
+                mn.Show();
             }
             else
             {
