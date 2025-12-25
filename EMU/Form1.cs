@@ -80,7 +80,7 @@ namespace CarRentalManagementSystem
 
         private void Loginbtn_Click(object sender, EventArgs e)
         {
-            // EMRAAN হলো আপনার সঠিক সার্ভার নেম
+            
             SqlConnection con = new SqlConnection(@"Data Source=EMRAAN;Initial Catalog=CarRentalManagementSystem;Integrated Security=True;TrustServerCertificate=True");
             con.Open();
             string username = txtUsername.Text;
