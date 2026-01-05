@@ -31,6 +31,7 @@ namespace CarRentalManagementSystem.EMU
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.crossbtn = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -54,8 +55,8 @@ namespace CarRentalManagementSystem.EMU
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.crossbtn = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.crossbtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -64,7 +65,6 @@ namespace CarRentalManagementSystem.EMU
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.crossbtn)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,19 +74,33 @@ namespace CarRentalManagementSystem.EMU
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(801, 50);
+            this.panel1.Size = new System.Drawing.Size(1068, 62);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // crossbtn
+            // 
+            this.crossbtn.Image = ((System.Drawing.Image)(resources.GetObject("crossbtn.Image")));
+            this.crossbtn.Location = new System.Drawing.Point(999, 0);
+            this.crossbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crossbtn.Name = "crossbtn";
+            this.crossbtn.Size = new System.Drawing.Size(69, 62);
+            this.crossbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.crossbtn.TabIndex = 20;
+            this.crossbtn.TabStop = false;
+            this.crossbtn.Click += new System.EventHandler(this.crossbtn_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(54, 12);
+            this.label6.Location = new System.Drawing.Point(72, 15);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(155, 23);
+            this.label6.Size = new System.Drawing.Size(197, 29);
             this.label6.TabIndex = 21;
             this.label6.Text = "Manage Customer";
             // 
@@ -95,8 +109,9 @@ namespace CarRentalManagementSystem.EMU
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 47);
+            this.pictureBox1.Size = new System.Drawing.Size(80, 58);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -106,17 +121,19 @@ namespace CarRentalManagementSystem.EMU
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Location = new System.Drawing.Point(0, 49);
+            this.panel2.Location = new System.Drawing.Point(0, 60);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(143, 402);
+            this.panel2.Size = new System.Drawing.Size(191, 495);
             this.panel2.TabIndex = 1;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(0, 34);
+            this.pictureBox6.Location = new System.Drawing.Point(0, 42);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(143, 285);
+            this.pictureBox6.Size = new System.Drawing.Size(191, 351);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 20;
             this.pictureBox6.TabStop = false;
@@ -125,9 +142,10 @@ namespace CarRentalManagementSystem.EMU
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(160, 69);
+            this.label2.Location = new System.Drawing.Point(213, 85);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 19);
+            this.label2.Size = new System.Drawing.Size(97, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "CustmerID";
             // 
@@ -135,19 +153,22 @@ namespace CarRentalManagementSystem.EMU
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(160, 104);
+            this.label3.Location = new System.Drawing.Point(213, 128);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 19);
+            this.label3.Size = new System.Drawing.Size(134, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Custmer Name";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(160, 145);
+            this.label4.Location = new System.Drawing.Point(213, 178);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 19);
+            this.label4.Size = new System.Drawing.Size(72, 24);
             this.label4.TabIndex = 4;
             this.label4.Text = "Gender";
             // 
@@ -155,31 +176,35 @@ namespace CarRentalManagementSystem.EMU
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(160, 214);
+            this.label5.Location = new System.Drawing.Point(213, 263);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 19);
+            this.label5.Size = new System.Drawing.Size(63, 24);
             this.label5.TabIndex = 5;
             this.label5.Text = "Phone";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(273, 70);
+            this.textBox1.Location = new System.Drawing.Point(364, 86);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(206, 20);
+            this.textBox1.Size = new System.Drawing.Size(273, 22);
             this.textBox1.TabIndex = 6;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(271, 105);
+            this.textBox2.Location = new System.Drawing.Point(361, 129);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(206, 20);
+            this.textBox2.Size = new System.Drawing.Size(273, 22);
             this.textBox2.TabIndex = 7;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(271, 215);
+            this.textBox4.Location = new System.Drawing.Point(361, 265);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(206, 20);
+            this.textBox4.Size = new System.Drawing.Size(273, 22);
             this.textBox4.TabIndex = 9;
             // 
             // comboBox1
@@ -188,9 +213,10 @@ namespace CarRentalManagementSystem.EMU
             this.comboBox1.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(273, 146);
+            this.comboBox1.Location = new System.Drawing.Point(364, 180);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(204, 21);
+            this.comboBox1.Size = new System.Drawing.Size(271, 24);
             this.comboBox1.TabIndex = 10;
             // 
             // Savebtn
@@ -198,9 +224,10 @@ namespace CarRentalManagementSystem.EMU
             this.Savebtn.BackColor = System.Drawing.Color.SteelBlue;
             this.Savebtn.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Savebtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Savebtn.Location = new System.Drawing.Point(530, 69);
+            this.Savebtn.Location = new System.Drawing.Point(707, 85);
+            this.Savebtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Savebtn.Name = "Savebtn";
-            this.Savebtn.Size = new System.Drawing.Size(119, 37);
+            this.Savebtn.Size = new System.Drawing.Size(159, 46);
             this.Savebtn.TabIndex = 13;
             this.Savebtn.Text = "Save";
             this.Savebtn.UseVisualStyleBackColor = false;
@@ -210,9 +237,10 @@ namespace CarRentalManagementSystem.EMU
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.SteelBlue;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(539, 75);
+            this.pictureBox2.Location = new System.Drawing.Point(719, 92);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(27, 26);
+            this.pictureBox2.Size = new System.Drawing.Size(36, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -221,9 +249,10 @@ namespace CarRentalManagementSystem.EMU
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(539, 118);
+            this.pictureBox3.Location = new System.Drawing.Point(719, 145);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(27, 26);
+            this.pictureBox3.Size = new System.Drawing.Size(36, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
@@ -233,9 +262,10 @@ namespace CarRentalManagementSystem.EMU
             this.Addbtn.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.Addbtn.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Addbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Addbtn.Location = new System.Drawing.Point(530, 112);
+            this.Addbtn.Location = new System.Drawing.Point(707, 138);
+            this.Addbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Addbtn.Name = "Addbtn";
-            this.Addbtn.Size = new System.Drawing.Size(119, 37);
+            this.Addbtn.Size = new System.Drawing.Size(159, 46);
             this.Addbtn.TabIndex = 15;
             this.Addbtn.Text = "Add";
             this.Addbtn.UseVisualStyleBackColor = false;
@@ -245,9 +275,10 @@ namespace CarRentalManagementSystem.EMU
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.SteelBlue;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(539, 161);
+            this.pictureBox4.Location = new System.Drawing.Point(719, 198);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(27, 26);
+            this.pictureBox4.Size = new System.Drawing.Size(36, 32);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
@@ -257,9 +288,10 @@ namespace CarRentalManagementSystem.EMU
             this.Updatebtn.BackColor = System.Drawing.Color.SteelBlue;
             this.Updatebtn.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Updatebtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Updatebtn.Location = new System.Drawing.Point(530, 155);
+            this.Updatebtn.Location = new System.Drawing.Point(707, 191);
+            this.Updatebtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Updatebtn.Name = "Updatebtn";
-            this.Updatebtn.Size = new System.Drawing.Size(119, 37);
+            this.Updatebtn.Size = new System.Drawing.Size(159, 46);
             this.Updatebtn.TabIndex = 17;
             this.Updatebtn.Text = "Update";
             this.Updatebtn.UseVisualStyleBackColor = false;
@@ -269,9 +301,10 @@ namespace CarRentalManagementSystem.EMU
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Firebrick;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(539, 206);
+            this.pictureBox5.Location = new System.Drawing.Point(719, 254);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(27, 26);
+            this.pictureBox5.Size = new System.Drawing.Size(36, 32);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 18;
             this.pictureBox5.TabStop = false;
@@ -281,9 +314,10 @@ namespace CarRentalManagementSystem.EMU
             this.Delete.BackColor = System.Drawing.Color.Firebrick;
             this.Delete.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Delete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Delete.Location = new System.Drawing.Point(530, 200);
+            this.Delete.Location = new System.Drawing.Point(707, 246);
+            this.Delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Delete.Name = "Delete";
-            this.Delete.Size = new System.Drawing.Size(119, 37);
+            this.Delete.Size = new System.Drawing.Size(159, 46);
             this.Delete.TabIndex = 19;
             this.Delete.Text = "Delete";
             this.Delete.UseVisualStyleBackColor = false;
@@ -294,46 +328,39 @@ namespace CarRentalManagementSystem.EMU
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(143, 256);
+            this.dataGridView1.Location = new System.Drawing.Point(191, 315);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(654, 194);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(872, 239);
             this.dataGridView1.TabIndex = 20;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(271, 179);
+            this.textBox3.Location = new System.Drawing.Point(361, 220);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(206, 20);
+            this.textBox3.Size = new System.Drawing.Size(273, 22);
             this.textBox3.TabIndex = 22;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(160, 178);
+            this.label1.Location = new System.Drawing.Point(213, 219);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 19);
+            this.label1.Size = new System.Drawing.Size(56, 24);
             this.label1.TabIndex = 21;
             this.label1.Text = "Email";
             // 
-            // crossbtn
-            // 
-            this.crossbtn.Image = ((System.Drawing.Image)(resources.GetObject("crossbtn.Image")));
-            this.crossbtn.Location = new System.Drawing.Point(749, 0);
-            this.crossbtn.Name = "crossbtn";
-            this.crossbtn.Size = new System.Drawing.Size(52, 50);
-            this.crossbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.crossbtn.TabIndex = 20;
-            this.crossbtn.TabStop = false;
-            this.crossbtn.Click += new System.EventHandler(this.crossbtn_Click);
-            // 
             // Customer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
@@ -356,12 +383,14 @@ namespace CarRentalManagementSystem.EMU
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Customer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer";
             this.Load += new System.EventHandler(this.Customer_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.crossbtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -370,7 +399,6 @@ namespace CarRentalManagementSystem.EMU
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.crossbtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

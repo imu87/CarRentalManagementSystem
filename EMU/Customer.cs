@@ -121,5 +121,10 @@ namespace CarRentalManagementSystem.EMU
 
             dataGridView1.DataSource = table;
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
