@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Anika\Maintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anika\Maintenance.Designer.cs">
+      <DependentUpon>Maintenance.cs</DependentUpon>
+    </Compile>
     <Compile Include="EMU\Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     <Compile Include="Roza\Car.Designer.cs">
       <DependentUpon>Car.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Anika\Maintenance.resx">
+      <DependentUpon>Maintenance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EMU\Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
